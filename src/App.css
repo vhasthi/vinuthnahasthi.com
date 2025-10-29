@@ -1,0 +1,188 @@
+/* === Global === */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #0d1117;
+  color: #e6e6e6;
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* === Navbar === */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #111827;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: #bb86fc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: #d3b8ff;
+  text-decoration: underline;
+}
+
+/* === Section Styling === */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: #bb86fc;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+  line-height: 1.7;
+  color: #d1d5db;
+}
+
+/* === Profile Image === */
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid #a4809d;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* === Contact Section === */
+.contact-links a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.contact-links a:hover {
+  transform: scale(1.1);
+}
+
+/* === Navbar === */
+.navbar {
+  background: #111827;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #bb86fc;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* adds spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #bb86fc;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.about-section {
+  display: flex;           /* Use flex layout */
+  align-items: center;     /* Vertically center the text next to the image */
+  gap: 20px;               /* Space between image and text */
+}
+
+.about-image {
+  width: 150px;            /* Adjust size of image */
+  height: auto;
+  border-radius: 8px;      /* Optional: rounded corners */
+}
+
+.about-text {
+  max-width: 600px;        /* Optional: limit text width */
+}
+
+
+/* === Mobile View === */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;  /* Stack image and text on small screens */
+    text-align: center;
+  }
+}
