@@ -46,7 +46,7 @@ export default function About() {
           {/* LinkedIn */}
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <img src={linkedinIcon} alt="LinkedIn" style={{ width: "25px" }} />
-            <a href="https://www.linkedin.com/in/vinuthna-hasthi/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/vinuthnahasthi/" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </div>
@@ -54,13 +54,13 @@ export default function About() {
           {/* Gmail */}
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <img src={gmailIcon} alt="Gmail" style={{ width: "25px" }} />
-            <a href="mailto:vinuthna@example.com">Email</a>
+            <a href="mailto:vinuthna.h@gmail.com">Email</a>
           </div>
 
           {/* GitHub */}
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <img src={githubIcon} alt="GitHub" style={{ width: "25px" }} />
-            <a href="https://github.com/vinuthna-hasthi" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/vhasthi" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
           </div>

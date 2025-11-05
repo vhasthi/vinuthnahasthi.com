@@ -7,6 +7,14 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* centers vertically (optional) */
+  min-height: 100vh;         /* makes the page full height */
+}
+
+
 main {
   display: flex;
   flex-direction: column;
